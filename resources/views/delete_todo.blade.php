@@ -6,10 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Edit {{ $todo->title }}
+                    Obriši {{ $todo->title }} ?
                 </div>
                 <h5 class="card-header">
-                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Nazad</a>
                 </h5>
 
                 <div class="card-body">
@@ -37,7 +37,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-12">
                                 <h3>
-                                    Are you sure you want to delete {{ $todo->title }}?
+                                    Da li ste sigurni da želite da obrišete {{ $todo->title }}?
                                 </h3>
                             </div>
                         </div>
@@ -45,9 +45,9 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-danger">
-                                    Yes
+                                    Da
                                 </button>
-                                <a href="{{ route('todo.index') }}" class="btn btn-info">No</a>
+                                <a href="{{ route('todo.index') }}" class="btn btn-info">Ne</a>
                             </div>
                         </div>
                     </form>

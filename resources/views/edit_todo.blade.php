@@ -6,10 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Edit {{ $todo->title }}
+                    Uredi {{ $todo->title }}
                 </div>
                 <h5 class="card-header">
-                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Nazad</a>
                 </h5>
 
                 <div class="card-body">
@@ -36,7 +36,7 @@
                         @method('PUT')
 
                         <div class="form-group row">
-                            <label for="title" class="col-form-label text-md-right">Title</label>
+                            <label for="title" class="col-form-label text-md-right">Naslov</label>
 
                                 <input id="title" type="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ $todo->title }}" required autocomplete="title" autofocus>
 
@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="description" class="col-form-label text-md-right">Description</label>
+                            <label for="description" class="col-form-label text-md-right">Opis</label>
 
                                 <textarea name="description" id="description" cols="30" rows="10" class="form-control @error('password') is-invalid @enderror" autocomplete="description" value="{{ $todo->description }}">{{ $todo->description }}</textarea>
 
@@ -69,7 +69,7 @@
                                     @endif
 
                                     <label class="form-check-label" for="completed">
-                                        Completed?
+                                        Završeno?
                                     </label>
                                 </div>
                             </div>
@@ -78,7 +78,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-success">
-                                    Submit
+                                    Spasi
                                 </button>
                             </div>
                         </div>

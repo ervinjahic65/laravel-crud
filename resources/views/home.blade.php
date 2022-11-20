@@ -6,10 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    {{ __('Dashboard') }}
+                    {{ __('Glavni meni') }}
                 </div>
                 <h5 class="card-header">
-                    <a href="{{ route('todo.create') }}" class="btn btn-sm btn-outline-primary">Add Item</a>
+                    <a href="{{ route('todo.create') }}" class="btn btn-sm btn-outline-primary">Dodajte +</a>
                 </h5>
                 <div class="card-body">
                     @if (session('status'))
@@ -38,7 +38,7 @@
                     <table class="table table-borderless table-hover">
                         <thead>
                           <tr>
-                            <th scope="col">Item</th>
+                            <th scope="col">Predmeti</th>
                             <th scope="col"></th>
                           </tr>
                         </thead>
