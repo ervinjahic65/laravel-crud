@@ -16,8 +16,6 @@ class TodosTableSeeder extends Seeder
     public function run()
     {
         $user = User::find(1);
-        Todo::firstOrCreate(['title' => 'Get Mangoes', 'description' => 'Get some mangoes', 'user_id' => $user->id]);
-        Todo::firstOrCreate(['title' => 'Get Banana', 'description' => 'Get some bananas', 'user_id' => $user->id]);
-        Todo::firstOrCreate(['title' => 'Get Banana', 'description' => 'Get some bananas', 'user_id' => $user->id]);
+        Todo::firstOrCreate(['title' => 'Lorem', 'description' => 'Lorem ipsum', 'user_id' => $user->id]);
     }
 }
