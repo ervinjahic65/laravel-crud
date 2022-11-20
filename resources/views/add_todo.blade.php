@@ -6,10 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Add Todo Item
+                    Dodajte predmete
                 </div>
                 <h5 class="card-header">
-                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Go Back</a>
+                    <a href="{{ route('todo.index') }}" class="btn btn-sm btn-outline-primary"><i class="fa fa-arrow-left"></i> Nazad</a>
                 </h5>
 
                 <div class="card-body">
@@ -35,7 +35,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="title" class="col-form-label text-md-right">Title</label>
+                            <label for="title" class="col-form-label text-md-right">Naslov</label>
 
                             <input id="title" type="title" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('email') }}" required autocomplete="title" autofocus>
 
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="description" class="col-form-label text-md-right">Description</label>
+                            <label for="description" class="col-form-label text-md-right">Opis</label>
 
                             <textarea name="description" id="description" cols="30" rows="10" class="form-control @error('password') is-invalid @enderror" autocomplete="description" value="{{ old('description') }}"></textarea>
 
@@ -63,7 +63,7 @@
                                 <input class="form-check-input" type="checkbox" name="completed" id="completed" value="{{ old('completed')}}">
 
                                 <label class="form-check-label" for="completed">
-                                    Completed?
+                                    Završeno?
                                 </label>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Submit
+                                    Spasi
                                 </button>
                             </div>
                         </div>

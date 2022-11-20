@@ -60,7 +60,7 @@ class TodosController extends Controller
 
         $todo->save();
 
-        return back()->with('success', 'Item created successfully');
+        return back()->with('success', 'Predmet uspješno kreirean');
     }
 
     /**
@@ -114,7 +114,7 @@ class TodosController extends Controller
 
         $todo->save();
 
-        return back()->with('success', 'Item updated successfully');
+        return back()->with('success', 'Predmet uspješno uređen');
     }
 
     /**
@@ -127,6 +127,6 @@ class TodosController extends Controller
     {
         $todo = Todo::where('id', $id)->where('user_id', Auth::user()->id)->firstOrFail();
         $todo->delete();
-        return redirect()->route('todo.index')->with('success', 'Item deleted successfully');
+        return redirect()->route('todo.index')->with('success', 'Predmet uspješno izbrisan');
     }
 }
