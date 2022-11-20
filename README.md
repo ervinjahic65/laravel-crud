@@ -14,15 +14,10 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Check the live app
-
-[http://ktechhub-todo-app.herokuapp.com/](http://ktechhub-todo-app.herokuapp.com/)
-
-
 ## Install and run the project
 
 ### Clone the project
-`git clone https://github.com/ktechhub/laravel-todo-app.git`
+`https://github.com/ervinjahic65/laravel-crud.git`
 
 ### Composer install
 
@@ -48,11 +43,6 @@ DB_PASSWORD=
 `php artisan db:seed`
 
 This creates a new user with the credentials below:
-
-```
-Email: kalkulus@ktechhub.com
-Password: ktechhub
-```
 
 ### Start the server
 
