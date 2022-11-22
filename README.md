@@ -49,5 +49,3 @@ This creates a new user with the credentials below:
 `php artisan serve`
 
 The server is located at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-You can login with the credentials shown... 
