@@ -17,7 +17,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Install and run the project
 
 ### Clone the project
-`https://github.com/ervinjahic65/laravel-crud.git`
 
 ### Composer install
 
@@ -31,7 +30,7 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=todo
+DB_DATABASE=crud
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -49,5 +48,3 @@ This creates a new user with the credentials below:
 `php artisan serve`
 
 The server is located at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-
-You can login with the credentials shown... 
