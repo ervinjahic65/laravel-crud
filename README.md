@@ -17,7 +17,6 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Install and run the project
 
 ### Clone the project
-`https://github.com/ervinjahic65/laravel-crud.git`
 
 ### Composer install
 
