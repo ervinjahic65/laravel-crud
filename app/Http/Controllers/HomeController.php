@@ -3,8 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Todo;
-use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -25,6 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return redirect()->route('todo.index');
+        return view('home');
     }
 }
